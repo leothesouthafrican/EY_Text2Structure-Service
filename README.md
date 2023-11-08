@@ -14,6 +14,7 @@ To convert text to structured data, make a POST request to the `/convert` endpoi
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"text":"Your input text here"}' http://localhost:4002/convert
+```
 
 ## Building and Running with Docker
 
