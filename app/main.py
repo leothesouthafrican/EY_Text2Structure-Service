@@ -62,7 +62,7 @@ def parse_invoice_api():
 
             # Prepare the executor input
             executor_input = {
-                'input': f"Year: {parsed_invoice['Year']}, Month: {parsed_invoice['Month']}, Supplier: {parsed_invoice['Supplier']}, Country: {parsed_invoice['Country']}"
+                'input': f"Year: {parsed_invoice['Year']}, Month: {parsed_invoice['Month']}, Supplier: {parsed_invoice['Supplier']}, Country: {parsed_invoice['Supplier Country']}"
             }
 
             # Run the agent
