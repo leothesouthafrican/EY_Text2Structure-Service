@@ -1,5 +1,8 @@
 from langchain.agents import Tool
 from langchain.utilities import GoogleSearchAPIWrapper
+from dotenv import load_dotenv
+
+load_dotenv()
 
 #Declare tools
 search = GoogleSearchAPIWrapper()

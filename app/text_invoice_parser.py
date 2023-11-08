@@ -14,9 +14,9 @@ def parse_invoice(file_path, model):
     # Define the response schema
     response_schemas = [
         ResponseSchema(name="Year", description="the year when the invoice was issued, if 2 digits, assume 20XX"),
-        ResponseSchema(name="Month", description="the month when the invoice was issued"),
+        ResponseSchema(name="Month", description="the month when the invoice was issued, converted to a number from 01 to 12"),
         ResponseSchema(name="Supplier", description="the name of the company issuing the invoice"),
-        ResponseSchema(name="Country", description="the country of the company issuing the invoice"),
+        ResponseSchema(name="Supplier Country", description="the country of the company issuing the invoice"),
     ]
 
     # Create the StructuredOutputParser

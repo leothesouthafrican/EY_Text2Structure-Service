@@ -14,3 +14,15 @@ To convert text to structured data, make a POST request to the `/convert` endpoi
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"text":"Your input text here"}' http://localhost:4002/convert
+
+## Building and Running with Docker
+
+To build and run the microservice using Docker, follow these steps:
+
+1. Ensure Docker is installed on your system. You can download it from the [Docker website](https://www.docker.com/products/docker-desktop).
+
+2. Build the Docker image by running the following command in your terminal:
+
+```bash
+docker build -t text-to-structured-data-microservice .
+docker run -p 5003:5003 text-to-structured-data-microservice
