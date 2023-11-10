@@ -1,3 +1,4 @@
 env/
 __pycache__/
 invoice_text/
+.env
